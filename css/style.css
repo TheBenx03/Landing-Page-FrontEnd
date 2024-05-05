@@ -1,0 +1,98 @@
+body {
+    background-image: url('https://wallpaperaccess.com/full/1397755.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(0, 0, 0);
+  }
+
+.card{
+  background-color: #000000!important;
+  border-color: #FFD700;
+}
+
+#presentation .card{
+  .card-title{color: gold;}
+  .card-text{color: #ffffff;}
+  .btn{
+    color: black;
+    background-color: gold;
+    border: gold;
+  }
+}
+
+#buttonSocials{
+  background-color: #000000!important;
+  border-color: #FFD700;
+  color: #FFD700
+}
+
+#navbar{
+  background-color: #000000!important;
+  .dropdown-menu{background-color: #000000!important;}
+  .dropdown-menu .dropdown-item{color: gold;}
+}
+
+#iconsNavbar{
+  color: #FFD700
+}
+
+#footer{
+  font-size: large;
+  background-color: #000000!important;
+}
+
+#carouselAbnormalitiesFrontPage{
+  background-color: #000000;
+  img{
+    height: 320px;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+#carouselTeamsFrontPage .carousel-caption{
+  background-color: #000000;
+  color: gold;
+  font-size:medium;
+}
+
+#database .card{
+  background-color: #000000;
+  color:gold;
+  border-color: #FFD700;
+  .link{ color: #FFD700; }
+  img{
+    height: 500px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+#archives .card{
+  background-color: #000000;
+  color:gold;
+  border-color: #FFD700;
+  .link{ color: #FFD700; }
+  img{
+    height: 500px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+#procedures .card{
+  background-color: #000000;
+  color:gold;
+  border-color: #FFD700;
+  .link{ color: #FFD700; }
+  img{
+    height: 500px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
