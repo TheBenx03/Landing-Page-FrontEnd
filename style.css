@@ -1,0 +1,169 @@
+body {
+    background-image: url('https://wallpaperaccess.com/full/1397755.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(0, 0, 0);
+  }
+
+h3 {
+  color: #ffffff;
+}
+
+label {
+  color: #ffffff;
+}
+.card{
+  background-color: #000000!important;
+  border-color: #FFD700;
+}
+
+#presentation .card{
+  .card-title{color: gold;}
+  .card-text{color: #ffffff;}
+  .btn{
+    color: black;
+    background-color: gold;
+    border: gold;
+  }
+}
+
+#buttonSocials{
+  background-color: #000000!important;
+  border-color: #FFD700;
+  color: #FFD700
+}
+
+#navbar{
+  background-color: #000000!important;
+  .dropdown-menu{background-color: #000000!important;}
+  .dropdown-menu .dropdown-item{color: gold;}
+}
+
+#iconsNavbar{
+  color: #FFD700
+}
+
+#footer{
+  font-size: large;
+  background-color: #000000!important;
+}
+
+#carouselAbnormalitiesFrontPage{
+  background-color: #000000;
+  img{
+    height: 320px;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+#carouselTeamsFrontPage .carousel-caption{
+  background-color: #000000;
+  color: gold;
+  font-size:medium;
+}
+
+#database .card{
+  background-color: #000000;
+  color:gold;
+  border-color: #FFD700;
+  .link{ color: #FFD700; }
+  img{
+    height: 500px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+#archives .card{
+  background-color: #000000;
+  color:gold;
+  border-color: #FFD700;
+  .link{ color: #FFD700; }
+  img{
+    height: 500px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+#procedures .card{
+  background-color: #000000;
+  color:gold;
+  border-color: #FFD700;
+  .link{ color: #FFD700; }
+  img{
+    height: 500px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+body > table{
+  width: 80%;
+  align-self: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table.list{
+  width: 100%;
+}
+
+td, th{
+  border: 1px solid #FFD700;
+  text-align: left;
+  padding: 8px;
+  color: #ffffff;
+}
+tr:nth-child(even),table.list thead>tr{
+  background-color: #000000;
+}
+
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #FFD700;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  width: 30%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form div.form-action-buttons{
+  text-align: right;
+}
+
+#UP{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #FFD700;
+  margin-right: 5px;
+}
+
+#nameValidationError{
+  color: red;
+  margin-left: 5px;
+}
+
+.hide{
+  display: none;
+}

@@ -16,41 +16,60 @@
         <!-- #region Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar"><div class="container">
 
-            <a class="navbar-brand" href="#"><i class="bi bi-gear-wide-connected" id="iconsNavbar"></i> Lobotomy Corporation</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span></button>
-
-            <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-database"id="iconsNavbar"></i> LC Database</a></li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-archive"id="iconsNavbar"></i> LC Archives</a></li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-box-fill"id="iconsNavbar"></i> LC Containment Procedures</a></li>
-                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      About Us </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Company Overview</a></li>
-                      <li><a class="dropdown-item" href="#">Our Team</a></li>
-                      <li><a class="dropdown-item" href="#">Company Culture</a></li>
-                </ul></li>
-                <li class="nav-item dropdown">
+          <a class="navbar-brand" href="/index.html"><i class="bi bi-gear-wide-connected" id="iconsNavbar"></i> Lobotomy Corporation</a>
+  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+  
+          <div class="collapse navbar-collapse col-lg-8" id="navbarNav"> <ul class="navbar-nav ml-auto">
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-database"id="iconsNavbar"></i> LC Database</a></li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-archive"id="iconsNavbar"></i> LC Archives</a></li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-box-fill"id="iconsNavbar"></i> LC Containment Procedures</a></li>
+              
+              <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Contact Us </a>
+                    About Us </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Contact Information</a></li>
-                    <li><a class="dropdown-item" href="#">Customer Support</a></li>
-                    <li><a class="dropdown-item" href="#">Feedback & Suggestions</a></li>
-                </ul></li>
-            </ul></div>
-
-        </div></nav>
+                    <li><a class="dropdown-item" href="#">Company Overview</a></li>
+                    <li><a class="dropdown-item" href="#">Our Team</a></li>
+                    <li><a class="dropdown-item" href="#">Company Culture</a></li>
+              </ul></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Contact Information</a></li>
+                  <li><a class="dropdown-item" href="#">Customer Support</a></li>
+                  <li><a class="dropdown-item" href="#">Feedback & Suggestions</a></li>
+              </ul></li>
+          </ul></div>
+          <div class="dropdown col-lg-4">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="droploginbutton" data-bs-toggle="dropdown" aria-expanded="false">
+                Login
+              </button>
+              <form onsubmit="event.preventDefault();onFormSubmit();" class="dropdown-menu p-4" id="login">
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                  <div>
+                    <label class="hide" id="nameValidationError">All fields are required</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+          </div>
+  
+      </div></nav>
         <!-- #endregion -->
         
         <div class="jumbotron jumbotron-fluid"><div class="container text-center text-light">
@@ -258,14 +277,13 @@
           </div>
         </section>
 
-
-
-        <footer class="bg-dark text-light text-center py-3 mb-4" id="footer"><div class="container">
-            <button type="button" class="btn btn-primary" id="buttonSocials"><i class="bi bi-instagram"></i></button>
-            <button type="button" class="btn btn-primary" id="buttonSocials"><i class="bi bi-youtube"></i></button>
-            <button type="button" class="btn btn-primary" id="buttonSocials"><i class="bi bi-twitter-x"></i></button>
-            <button type="button" class="btn btn-primary" id="buttonSocials"><i class="bi bi-tiktok"></i></button>
-            <p>&copy; 2024 Lobotomy Corporation</p>
-        </div></footer>
+        <footer class="footer mt-auto bg-dark text-light text-center py-3" id="footer"><div class="container">
+          <button type="button" class="btn btn-primary" id="buttonSocials"><i class="bi bi-instagram"></i></button>
+          <button type="button" class="btn btn-primary" id="buttonSocials"><i class="bi bi-youtube"></i></button>
+          <button type="button" class="btn btn-primary" id="buttonSocials"><i class="bi bi-twitter-x"></i></button>
+          <button type="button" class="btn btn-primary" id="buttonSocials"><i class="bi bi-tiktok"></i></button>
+          <p>&copy; 2024 Lobotomy Corporation</p>
+      </div></footer>
+      <script src="js/login.js"></script>
     </body>
 </html>
